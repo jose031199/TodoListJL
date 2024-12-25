@@ -1,0 +1,116 @@
+/*Global styling*/
+
+*{
+ font-family: 'Sigmar One',sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: #202124;   
+}
+
+h1,h2,input,button{
+    font-family: 'Silkscreen',sans-serif;
+}
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    background: #eff6ff;
+    gap: 12px;
+}
+
+.todoHeader{
+    display: flex;
+    align-items: stretch;
+}
+
+.todoHeader,
+.todoList{
+    max-width: 800px;
+    width: 100%;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.todoHeader input{
+    flex: 1;
+    border-radius: 14px;
+    outline: none;
+    width: 100%;
+}
+
+.todoHeader button{
+ border-radius: 15px;
+ background: transparent;
+ transition-duration:20ms;
+ cursor: pointer;
+}
+
+.todoHeader button:hover{
+    opacity: 0.7;
+}
+
+.todoHeader button,
+.todoHeader input{
+    padding: 14px 18px;
+    border: none;
+    outline: none;
+    background: white;
+}
+
+p{
+    font-size: 0.8em;
+}
+
+.todoList {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .todoItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px;
+    border-radius: 14px;
+    background: white;
+  }
+  
+  .todoItem p {
+    flex: 1;
+  }
+  
+  .actionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .actionsContainer button {
+    transition-duration: 200ms;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .actionsContainer button:hover {
+    opacity: 0.7;
+  }
+  
+  
+  
+  @media (min-width: 640px) {
+  
+    .todoHeader button,
+    .todoHeader input {
+      font-size: 1.2em;
+    }
+  
+    p {
+      font-size: 1em;
+    }
+  }
